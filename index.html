@@ -1,408 +1,867 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pierre Judicaël Fitahiana - Développeur Web</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+  </head>
+  <body>
+    <!-- Particles Background -->
+    <div class="particles-container" id="particles"></div>
+
     <!-- Navigation -->
     <nav>
-        <div class="container">
-            <div class="logo">PJF</div>
-            <ul>
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#about">À Propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#formation">Formation</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+      <div class="container">
+        <div class="logo">
+          <span class="logo-text">PJF</span>
+          <span class="logo-subtitle">Portfolio</span>
         </div>
+        <ul class="nav-menu">
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#about">À Propos</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#formation">Parcours</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>
-                    Bonjour, je suis<br>
-                    <span class="gradient-text">Pierre Judicaël Fitahiana</span>
-                </h1>
-                <p>Développeur Web passionné, spécialisé en création de sites web dynamiques et d'applications modernes. Autonome et rigoureux, je transforme vos idées en solutions digitales performantes.</p>
-                
-                <div class="contact-info">
-                    <a href="tel:0346219126">
-                        <i class="fas fa-phone"></i>
-                        034 62 191 26
-                    </a>
-                    <a href="mailto:fitahianajudicael05@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                        fitahianajudicael05@gmail.com
-                    </a>
-                    <a>
-                        <i class="fas fa-map-marker-alt"></i>
-                        Antananarivo, Tsimbazaza
-                    </a>
-                </div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-greeting">
+            <span class="wave">👋</span>
+            <p>Bonjour, je suis</p>
+          </div>
+          <h1 class="hero-name">
+            <span class="gradient-text typing-effect"
+              >Pierre Judicaël Fitahiana</span
+            >
+          </h1>
+          <h2 class="hero-role">
+            <span class="role-text"></span>
+            <span class="cursor">|</span>
+          </h2>
+          <p class="hero-description">
+            Développeur Web passionné, spécialisé en création de sites web
+            dynamiques et d'applications modernes. Autonome et rigoureux, je
+            transforme vos idées en solutions digitales performantes.
+          </p>
 
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
-                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
-                </div>
-            </div>
+          <div class="contact-info-hero">
+            <a href="tel:0346219126" class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>034 62 191 26</span>
+            </a>
+            <a href="mailto:fitahianajudicael05@gmail.com" class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>fitahianajudicael05@gmail.com</span>
+            </a>
+            <a class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Antananarivo, Tsimbazaza</span>
+            </a>
+          </div>
 
-            <div class="hero-image">
-                <div class="profile-card">
-                    <div class="profile-img">
-                       <img src="./assets/profils.png" alt="photo de profil" class="photo-img">
-                    </div>
-                    <h3>Développeur Web</h3>
-                    <p style="color: var(--gray); margin-top: 0.5rem;">Laravel • WordPress <br> Integrateur Web</p>
-                </div>
-            </div>
+          <div class="cta-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <span>Voir mes projets</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Me contacter</span>
+              <i class="fas fa-paper-plane"></i>
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a
+              href="https://github.com/JudicaelFTHN"
+              target="_blank"
+              class="social-link"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="www.linkedin.com/in/judicaël-fitahiana-b67621341"
+              target="_blank"
+              class="social-link"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="mailto:fitahianajudicael05@gmail.com"
+              class="social-link"
+              aria-label="Email"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
         </div>
+
+        <div class="hero-image">
+          <div class="profile-card">
+            <div class="profile-card-inner">
+              <div class="profile-img">
+                <div class="profile-img-wrapper">
+                  <img
+                    src="./assets/profils.png"
+                    alt="Photo de profil de Pierre Judicaël Fitahiana"
+                    class="photo-img"
+                  />
+                </div>
+                <div class="status-indicator">
+                  <span class="status-dot"></span>
+                  Disponible
+                </div>
+              </div>
+              <div class="profile-info">
+                <h3>Développeur Web Junior</h3>
+                <div class="profile-tags">
+                  <span class="profile-tag">Laravel</span>
+                  <span class="profile-tag">WordPress</span>
+                  <span class="profile-tag">Intégrateur Web</span>
+                </div>
+                <div class="profile-stats">
+                  <div class="profile-stat">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Master II</span>
+                  </div>
+                  <div class="profile-stat">
+                    <i class="fas fa-code"></i>
+                    <span>6+ Technologies</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <p>Faites défiler</p>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <div class="section-title">
-            <h2>À Propos de Moi</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="about-content">
-            <div class="about-text">
-                <p>Je suis passionné par la création de sites web et désireux de mettre mes connaissances théoriques en pratique dans un environnement professionnel. Autonome et rigoureux, je suis motivé par un désir constant d'apprendre et de m'améliorer.</p>
-                <p>Je suis enthousiaste à l'idée de contribuer au sein d'une équipe dynamique, d'appliquer mes compétences et de relever de nouveaux défis. Ma formation solide et mon expérience pratique me permettent de créer des solutions web modernes et performantes.</p>
-                <p><strong>Langues:</strong> Français, Anglais, Malagasy</p>
-                <p><strong>Centres d'intérêt:</strong> Volley-Ball, Basket-Ball, Musique</p>
+      <div class="section-title">
+        <span class="section-number">01.</span>
+        <h2>À Propos de Moi</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <div class="about-intro">
+            <h3>Passionné par le développement web</h3>
+            <p>
+              Je suis un développeur web passionné par la création de sites web
+              modernes et performants. Mon parcours académique solide et mon
+              expérience pratique me permettent de transformer des concepts en
+              solutions digitales concrètes.
+            </p>
+          </div>
+
+          <div class="about-details">
+            <p>
+              Autonome et rigoureux, je suis motivé par un désir constant
+              d'apprendre et de m'améliorer. Je suis enthousiaste à l'idée de
+              contribuer au sein d'une équipe dynamique, d'appliquer mes
+              compétences et de relever de nouveaux défis techniques.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Spécialisé en développement Laravel et WordPress</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Expérience en intégration web responsive</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Compétences en bases de données SQL et NoSQL</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Capacité à travailler en équipe et en autonomie</span>
+              </div>
             </div>
-            <div class="stats">
-                <div class="stat-card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Master I</h3>
-                    <p>En Informatique</p>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-code"></i>
-                    <h3>10+</h3>
-                    <p>Technologies</p>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-project-diagram"></i>
-                    <h3>Multiples</h3>
-                    <p>Projets</p>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-briefcase"></i>
-                    <h3>Stage</h3>
-                    <p>269 Technology</p>
-                </div>
+          </div>
+
+          <div class="about-info-grid">
+            <div class="info-item">
+              <i class="fas fa-language"></i>
+              <div>
+                <h4>Langues</h4>
+                <p>Français • Anglais • Malagasy</p>
+              </div>
             </div>
+            <div class="info-item">
+              <i class="fas fa-heart"></i>
+              <div>
+                <h4>Centres d'intérêt</h4>
+                <p>Volley-Ball • Basket-Ball • Musique</p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="stats">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="stat-content">
+              <h3 class="counter" data-target="2">0</h3>
+              <p>Masters en cours</p>
+              <span class="stat-detail">Master II Informatique</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="stat-content">
+              <h3 class="counter" data-target="2">0</h3>
+              <p>Stages effectués</p>
+              <span class="stat-detail">En entreprise</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="stat-content">
+              <h3><span class="counter" data-target="6">0</span></h3>
+              <p>Technologies</p>
+              <span class="stat-detail">Frontend & Backend</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="stat-content">
+              <h3 class="counter" data-target="5">0</h3>
+              <p>Autres</p>
+              <span class="stat-detail">Framework & CMS</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <div class="stat-content">
+              <h3><span class="counter" data-target="10">0</span>+</h3>
+              <p>Projets réalisés</p>
+              <span class="stat-detail">WordPress & Laravel</span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
-        <div class="section-title">
-            <h2>Mes Compétences</h2>
-            <div class="underline"></div>
+      <div class="section-title">
+        <span class="section-number">02.</span>
+        <h2>Mes Compétences</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="skills-categories">
+        <div class="skills-category">
+          <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-html5"></i></div>
+              <h4>HTML5</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="95"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+              <h4>CSS3</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="90"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-js"></i></div>
+              <h4>JavaScript</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="85"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+              <h4>Bootstrap</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="90"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-code"></i></div>
+              <h4>jQuery</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="80"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="skills-grid">
+
+        <div class="skills-category">
+          <h3><i class="fas fa-server"></i> Backend & Databases</h3>
+          <div class="skills-grid">
             <div class="skill-card">
-                <div class="skill-icon"><i class="fab fa-html5"></i></div>
-                <h3>HTML/CSS</h3>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fab fa-js"></i></div>
-                <h3>JavaScript</h3>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
-                <h3>Bootstrap</h3>
+              <div class="skill-icon"><i class="fab fa-php"></i></div>
+              <h4>PHP</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="85"></div>
+              </div>
             </div>
             <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-code"></i></div>
-                <h3>jQuery</h3>
+              <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+              <h4>Laravel</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="80"></div>
+              </div>
             </div>
             <div class="skill-card">
-                <div class="skill-icon"><i class="fab fa-php"></i></div>
-                <h3>PHPL</h3>
-            </div>
-	   <div class="skill-card">
-                <div class="skill-icon"><i class="fa fa-server"></i></div>
-                <h3>MySQL</h3>
-            </div>
-	    <div class="skill-card">
-                <div class="skill-icon"><i class="fa fa-table"></i></div>
-                <h3>SQL</h3>
+              <div class="skill-icon"><i class="fas fa-database"></i></div>
+              <h4>MySQL</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="85"></div>
+              </div>
             </div>
             <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-database"></i></div>
-                <h3>MongoDB</h3>
+              <div class="skill-icon"><i class="fas fa-table"></i></div>
+              <h4>SQL</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="85"></div>
+              </div>
             </div>
             <div class="skill-card">
-                <div class="skill-icon"><i class="fab fa-laravel"></i></div>
-                <h3>Laravel</h3>
+              <div class="skill-icon"><i class="fas fa-leaf"></i></div>
+              <h4>MongoDB</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="75"></div>
+              </div>
             </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fab fa-wordpress"></i></div>
-                <h3>WordPress</h3>
-            </div>
+          </div>
         </div>
+
+        <div class="skills-category">
+          <h3><i class="fas fa-tools"></i> CMS & Outils</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-wordpress"></i></div>
+              <h4>WordPress</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="90"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-puzzle-piece"></i></div>
+              <h4>Elementor</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="85"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+              <h4>ACF</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="80"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+              <h4>MS Office</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="85"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+              <h4>Git</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="50"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Formation Section -->
     <section id="formation">
-        <div class="section-title">
-            <h2>Formations & Expériences</h2>
-            <div class="underline"></div>
+      <div class="section-title">
+        <span class="section-number">03.</span>
+        <h2>Formations & Expériences</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="timeline">
+        <!-- 2025-2026 -->
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-badge experience">Stage</span>
+            <span class="timeline-date">Novembre 2025 - Aujourd'hui</span>
+            <h3>Stage en Développement Web WordPress</h3>
+            <p class="timeline-company">
+              <i class="fas fa-building"></i> Votre marque
+            </p>
+            <ul class="timeline-list">
+              <li>Création et intégration de sites sur WordPress</li>
+              <li>Réalisation de plusieurs projets clients</li>
+              <li>Site web responsive</li>
+              <li>Optimisation des performances</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">WordPress</span>
+              <span class="tag">Elementor</span>
+              <span class="tag">PHP</span>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
         </div>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <span class="timeline-date">2024 - 2025</span>
-                    <h3>Master I en Informatique</h3>
-                    <p><strong>Université FJKM Ravelojaona</strong></p>
-                    <p>Actuellement en cours de formation pour le Master I en informatique, approfondissement des compétences en développement et gestion de projets.</p>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
 
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <span class="timeline-date">Janvier 2025</span>
-                    <h3>Stage en Développement Web WordPress</h3>
-                    <p><strong>269 Technology - 67 Heures</strong></p>
-                    <p>Conception et amélioration de sites web utilisant WordPress. Maîtrise des différents thèmes et plugins pour créer des solutions personnalisées.</p>
-                </div>
-                <div class="timeline-dot"></div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-badge education">Formation</span>
+            <span class="timeline-date">2025 - 2026</span>
+            <h3>Master II en Informatique</h3>
+            <p class="timeline-company">
+              <i class="fas fa-university"></i> Université FJKM Ravelojaona
+            </p>
+            <p>
+              Actuellement en cours de formation pour le Master II en
+              informatique. Spécialisation en développement web et gestion de
+              projets informatiques avancés.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">En cours</span>
+              <span class="tag">Master II</span>
             </div>
-
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <span class="timeline-date">2025</span>
-                    <h3>Formation Base de Données NoSQL MongoDB</h3>
-                    <p><strong>Orange Digital Center</strong></p>
-                    <p>Niveau Intermédiaire - Formation approfondie sur MongoDB, gestion de bases de données NoSQL modernes.</p>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <span class="timeline-date">2023 - 2024</span>
-                    <h3>Licence en Science de l'Informatique</h3>
-                    <p><strong>Université IESTIME Antaninandro</strong></p>
-                    <p>Spécialité: Développement Web. Trois années d'étude pour renforcer mes compétences en développement d'applications web et sites web dynamiques, avec une excellente maîtrise de Laravel et WordPress.</p>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <span class="timeline-date">2022 - 2023</span>
-                    <h3>Technicien Supérieur en Informatique et Gestion</h3>
-                    <p><strong>Université IESTIME Antaninandro</strong></p>
-                    <p>Deux années d'étude pour développer de bons sites web dynamiques avec PHP et MySQL.</p>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <span class="timeline-date">2020 - 2021</span>
-                    <h3>Baccalauréat Série D</h3>
-                    <p><strong>Sekoly Catholique Masina Maria Mpanampy Soanierana</strong></p>
-                    <p>Obtention du baccalauréat série scientifique.</p>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
+          </div>
+          <div class="timeline-dot"></div>
         </div>
+
+        <!-- 2024-2025 -->
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-badge training">Formation</span>
+            <span class="timeline-date">2025</span>
+            <h3>Formation Base de Données NoSQL MongoDB</h3>
+            <p class="timeline-company">
+              <i class="fas fa-laptop"></i> Orange Digital Center
+            </p>
+            <p>
+              Formation approfondie sur MongoDB de niveau intermédiaire.
+              Maîtrise des concepts NoSQL, modélisation de données, requêtes
+              avancées et optimisation des performances.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">MongoDB</span>
+              <span class="tag">NoSQL</span>
+              <span class="tag">Certifié</span>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-badge experience">Stage</span>
+            <span class="timeline-date">Janvier 2025</span>
+            <h3>Stage en Développement Web WordPress</h3>
+            <p class="timeline-company">
+              <i class="fas fa-building"></i> 269 Technology
+            </p>
+            <p>
+              Stage intensif de 67 heures axé sur le développement WordPress
+              professionnel.
+            </p>
+            <ul class="timeline-list">
+              <li>Conception et amélioration de sites web</li>
+              <li>Utilisation de différents thèmes et plugins</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">WordPress</span>
+              <span class="tag">Plugins</span>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-badge education">Diplôme</span>
+            <span class="timeline-date">2024 - 2025</span>
+            <h3>Master I en Informatique</h3>
+            <p class="timeline-company">
+              <i class="fas fa-university"></i> Université FJKM Ravelojaona
+            </p>
+            <p>
+              Formation récemment terminée avec succès. Approfondissement des
+              compétences en développement web, architecture logicielle et
+              gestion de projets informatiques.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Diplômé</span>
+              <span class="tag">Master I</span>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <!-- 2023-2024 -->
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-badge education">Licence</span>
+            <span class="timeline-date">2023 - 2024</span>
+            <h3>Licence en Science de l'Informatique</h3>
+            <p class="timeline-company">
+              <i class="fas fa-university"></i> Université IESTIME Antaninandro
+            </p>
+            <p><strong>Spécialité :</strong> Développement Web</p>
+            <p>
+              Formation approfondie en développement web avec une spécialisation
+              en PHP, MySQL et technologies modernes du web.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Licence</span>
+              <span class="tag">Dev Web</span>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <!-- 2022-2023 -->
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-badge education">Technicien</span>
+            <span class="timeline-date">2022 - 2023</span>
+            <h3>Technicien Supérieur en Informatique et Gestion</h3>
+            <p class="timeline-company">
+              <i class="fas fa-university"></i> Université IESTIME Antaninandro
+            </p>
+            <p><strong>Spécialité :</strong> Développement Web</p>
+            <p>
+              Ces deux années d'étude m'ont permis de développer de bons sites
+              web dynamiques avec PHP et MySQL. Acquisition des fondamentaux du
+              développement web.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">TS</span>
+              <span class="tag">PHP/MySQL</span>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <!-- 2021 -->
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-badge education">Bac</span>
+            <span class="timeline-date">2021</span>
+            <h3>Baccalauréat Série C</h3>
+            <p class="timeline-company">
+              <i class="fas fa-school"></i> Sekoly Catholique Masina Maria
+              Mpanampy Soanierana
+            </p>
+            <p>
+              Obtention du baccalauréat série scientifique. Solide base en
+              mathématiques et sciences.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Série C</span>
+              <span class="tag">Scientifique</span>
+            </div>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <div class="section-title">
-            <h2>Mes Projets</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fab fa-wordpress"></i>
-                </div>
-                <div class="project-content">
-                    <h3>Projets WordPress</h3>
-                    <p>Collection de sites web développés avec WordPress, thèmes personnalisés et plugins optimisés.</p>
-                    <div class="project-tags">
-                        <span class="tag">WordPress</span>
-                        <span class="tag">Elementor</span>
-                        <span class="tag">PHP</span>
-                    </div>
-                    <a href="https://github.com/JudicaelFTHN/wordpress-RLZ" target="_blank" class="project-link">
-                        Voir le projet <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+      <div class="section-title">
+        <span class="section-number">04.</span>
+        <h2>Mes Projets</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <i class="fab fa-wordpress"></i>
             </div>
-
-            <div class="project-card">
-                <div class="project-image"><i class="fas fa-laptop-code"></i></div>
-                <div class="project-content">
-                    <h3>Intégrations HTML/CSS/JS</h3>
-                    <p>Projets d'intégration web responsive avec Bootstrap.</p>
-                    <div class="project-tags">
-                        <span class="tag">HTML5</span>
-                        <span class="tag">CSS3</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Bootstrap</span>
-                    </div>
-                    <a href="https://github.com/JudicaelFTHN/Teste-Int-gration-HTML-CSS" target="_blank" class="project-link">
-                        Voir le projet <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+          </div>
+          <div class="project-content">
+            <h3>Projets WordPress</h3>
+            <p>
+              Collection de sites web professionnels développés avec WordPress,
+              incluant des thèmes personnalisés, plugins optimisés et
+              intégrations avancées.
+            </p>
+            <div class="project-tags">
+              <span class="tag">WordPress</span>
+              <span class="tag">Elementor</span>
+              <span class="tag">ACF</span>
+              <span class="tag">PHP</span>
             </div>
-
-<!--            <div class="project-card">-->
-<!--                <div class="project-image"><i class="fab fa-laravel"></i></div>-->
-<!--                <div class="project-content">-->
-<!--                    <h3>Applications Laravel</h3>-->
-<!--                    <p>Développement d'applications web dynamiques avec Laravel.</p>-->
-<!--                    <div class="project-tags">-->
-<!--                        <span class="tag">Laravel</span>-->
-<!--                        <span class="tag">PHP</span>-->
-<!--                        <span class="tag">MySQL</span>-->
-<!--                    </div>-->
-<!--                    <a href="#contact" class="project-link">-->
-<!--                        En savoir plus <i class="fas fa-arrow-right"></i>-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--            </div>-->
-
-<!--            <div class="project-card">-->
-<!--                <div class="project-image"><i class="fas fa-database"></i></div>-->
-<!--                <div class="project-content">-->
-<!--                    <h3>Projets MongoDB</h3>-->
-<!--                    <p>Implémentation de bases de données NoSQL modernes.</p>-->
-<!--                    <div class="project-tags">-->
-<!--                        <span class="tag">MongoDB</span>-->
-<!--                        <span class="tag">NoSQL</span>-->
-<!--                        <span class="tag">Database</span>-->
-<!--                    </div>-->
-<!--                    <a href="#contact" class="project-link">-->
-<!--                        En savoir plus <i class="fas fa-arrow-right"></i>-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="project-links">
+              <a
+                href="https://github.com/JudicaelFTHN/wordpress-RLZ"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i>
+                Voir le code
+              </a>
+              <a
+                href="https://github.com/JudicaelFTHN/wordpress-RLZ"
+                target="_blank"
+                class="project-link-primary"
+              >
+                Voir le projet <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
         </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Intégrations HTML/CSS/JS</h3>
+            <p>
+              Projets d'intégration web responsive et modernes utilisant les
+              dernières technologies frontend avec Bootstrap pour une expérience
+              utilisateur optimale.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/JudicaelFTHN/Teste-Int-gration-HTML-CSS"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i>
+                Voir le code
+              </a>
+              <a
+                href="https://github.com/JudicaelFTHN/Teste-Int-gration-HTML-CSS"
+                target="_blank"
+                class="project-link-primary"
+              >
+                Voir le projet <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <i class="fab fa-laravel"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Applications Laravel</h3>
+            <p>
+              Développement d'applications web dynamiques et robustes avec le
+              framework Laravel. Architecture MVC et intégration de bases de
+              données MySQL.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Laravel</span>
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">MVC</span>
+            </div>
+            <div class="project-links">
+              <a href="#contact" class="project-link-primary">
+                En savoir plus <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-- Contact Section -->
     <section id="contact">
-        <div class="contact-section">
-            <h2>Travaillons Ensemble</h2>
-            <p>Je suis disponible pour des projets freelance, des stages ou des opportunités d'emploi.</p>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <a href="tel:0346219126">
-                        <i class="fas fa-phone"></i>
-                        034 62 191 26
-                    </a>
-                    <a href="mailto:fitahianajudicael05@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                        fitahianajudicael05@gmail.com
-                    </a>
-                    <a>
-                        <i class="fas fa-map-marker-alt"></i>
-                        Antananarivo, Tsimbazaza
-                    </a>
-                </div>
-                <div class="button-contact">
-                    <div class="button-section">
-                        <a href="./assets/Cv_Judicael.pdf" download class="action-button" style="">Télécharger mon CV</a>
-                    </div>
-                    <div class="button-section">
-                        <a href="./assets/lettre_de_motivation.pdf" download class="action-button">Télécharger ma lettre de motivation</a>
-                    </div>
-                </div>
-            </div>
+      <div class="contact-section">
+        <div class="section-title">
+          <span class="section-number">05.</span>
+          <h2>Travaillons Ensemble</h2>
+          <div class="underline"></div>
         </div>
+        <p class="contact-description">
+          Je suis disponible pour des projets freelance, des stages ou des
+          opportunités d'emploi. N'hésitez pas à me contacter pour discuter de
+          vos projets.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-info-section">
+            <h3><i class="fas fa-address-card"></i> Informations de contact</h3>
+            <div class="contact-methods">
+              <a href="tel:0346219126" class="contact-method">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Téléphone</h4>
+                  <p>034 62 191 26</p>
+                </div>
+              </a>
+              <a
+                href="mailto:fitahianajudicael05@gmail.com"
+                class="contact-method"
+              >
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Email</h4>
+                  <p>fitahianajudicael05@gmail.com</p>
+                </div>
+              </a>
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Localisation</h4>
+                  <p>Antananarivo, Tsimbazaza</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <h3><i class="fas fa-download"></i> Documents</h3>
+            <div class="action-buttons">
+              <a href="./assets/Cv_Judicael.pdf" download class="action-button">
+                <i class="fas fa-file-pdf"></i>
+                <div>
+                  <h4>Mon CV</h4>
+                  <p>Télécharger en PDF</p>
+                </div>
+              </a>
+              <a
+                href="./assets/lettre_de_motivation.pdf"
+                download
+                class="action-button"
+              >
+                <i class="fas fa-file-alt"></i>
+                <div>
+                  <h4>Lettre de motivation</h4>
+                  <p>Télécharger en PDF</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-cta">
+          <h3>Prêt à démarrer votre projet ?</h3>
+          <a
+            href="mailto:fitahianajudicael05@gmail.com"
+            class="btn btn-primary btn-large"
+          >
+            <span>Envoyez-moi un message</span>
+            <i class="fas fa-paper-plane"></i>
+          </a>
+        </div>
+      </div>
     </section>
-     <footer>
-        <p>&copy; 2025 Pierre Judicaël Fitahiana - Développeur Web. Tous droits réservés.</p>
-        <p style="margin-top: 0.5rem; opacity: 0.6;">Conçu avec passion à Antananarivo, Madagascar</p>
-     </footer>
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const offsetTop = target.offsetTop - 80;
-                    window.scrollTo({
-                        top: offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
 
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>PJF</h3>
+          <p>Développeur Web Junior</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Accueil</a>
+          <a href="#about">À Propos</a>
+          <a href="#skills">Compétences</a>
+          <a href="#projects">Projets</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a
+            href="https://github.com/JudicaelFTHN"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="www.linkedin.com/in/judicaël-fitahiana-b67621341"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:fitahianajudicael05@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Pierre Judicaël Fitahiana - Tous droits réservés</p>
+        <p class="footer-location">
+          Conçu avec <i class="fas fa-heart"></i> à Antananarivo, Madagascar
+        </p>
+      </div>
+    </footer>
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
-        document.querySelectorAll('.skill-card, .project-card, .timeline-item, .stat-card').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'all 0.6s ease';
-            observer.observe(el);
-        });
-
-        const nav = document.querySelector('nav');
-        window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-
-            if (currentScroll > 100) {
-                nav.style.background = 'rgba(255, 255, 255, 0.98)';
-                nav.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.1)';
-            } else {
-                nav.style.background = 'rgba(255, 255, 255, 0.95)';
-                nav.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.05)';
-            }
-        });
-
-        const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('nav a[href^="#"]');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 200) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
-</body>
+    <script src="./assets/script.js"></script>
+    <!-- <script src="./script.js"></script> -->
+  </body>
 </html>
-

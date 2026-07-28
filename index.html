@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pierre Judicaël Fitahiana - Développeur Web</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <!-- <link rel="icon" type="image/svg+xml" href="favicon.svg" /> -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -18,7 +20,7 @@
   <body>
     <!-- Particles Background -->
     <div class="particles-container" id="particles"></div>
-
+ 
     <!-- Navigation -->
     <nav>
       <div class="container">
@@ -26,7 +28,7 @@
           <span class="logo-text">PJF</span>
           <span class="logo-subtitle">Portfolio</span>
         </div>
-        <ul class="nav-menu">
+        <ul class="nav-menu" id="navMenu">
           <li><a href="#home">Accueil</a></li>
           <li><a href="#about">À Propos</a></li>
           <li><a href="#skills">Compétences</a></li>
@@ -34,14 +36,20 @@
           <li><a href="#projects">Projets</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="mobile-menu-toggle">
+        <button
+          type="button"
+          class="mobile-menu-toggle"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
       </div>
     </nav>
-
+ 
     <!-- Hero Section -->
     <section id="home" class="hero">
       <div class="hero-content">
@@ -64,7 +72,7 @@
             dynamiques et d'applications modernes. Autonome et rigoureux, je
             transforme vos idées en solutions digitales performantes.
           </p>
-
+ 
           <div class="contact-info-hero">
             <a href="tel:0346219126" class="contact-item">
               <i class="fas fa-phone"></i>
@@ -79,7 +87,7 @@
               <span>Antananarivo, Tsimbazaza</span>
             </a>
           </div>
-
+ 
           <div class="cta-buttons">
             <a href="#projects" class="btn btn-primary">
               <span>Voir mes projets</span>
@@ -90,7 +98,7 @@
               <i class="fas fa-paper-plane"></i>
             </a>
           </div>
-
+ 
           <div class="social-links">
             <a
               href="https://github.com/JudicaelFTHN"
@@ -117,7 +125,7 @@
             </a>
           </div>
         </div>
-
+ 
         <div class="hero-image">
           <div class="profile-card">
             <div class="profile-card-inner">
@@ -156,7 +164,7 @@
           </div>
         </div>
       </div>
-
+ 
       <!-- Scroll Indicator -->
       <div class="scroll-indicator">
         <div class="mouse">
@@ -165,7 +173,7 @@
         <p>Faites défiler</p>
       </div>
     </section>
-
+ 
     <!-- About Section -->
     <section id="about">
       <div class="section-title">
@@ -184,7 +192,7 @@
               solutions digitales concrètes.
             </p>
           </div>
-
+ 
           <div class="about-details">
             <p>
               Autonome et rigoureux, je suis motivé par un désir constant
@@ -192,7 +200,7 @@
               contribuer au sein d'une équipe dynamique, d'appliquer mes
               compétences et de relever de nouveaux défis techniques.
             </p>
-
+ 
             <div class="about-highlights">
               <div class="highlight-item">
                 <i class="fas fa-check-circle"></i>
@@ -212,7 +220,7 @@
               </div>
             </div>
           </div>
-
+ 
           <div class="about-info-grid">
             <div class="info-item">
               <i class="fas fa-language"></i>
@@ -230,7 +238,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="stats">
           <div class="stat-card">
             <div class="stat-icon">
@@ -286,7 +294,7 @@
         </div>
       </div>
     </section>
-
+ 
     <!-- Skills Section -->
     <section id="skills">
       <div class="section-title">
@@ -294,7 +302,7 @@
         <h2>Mes Compétences</h2>
         <div class="underline"></div>
       </div>
-
+ 
       <div class="skills-categories">
         <div class="skills-category">
           <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
@@ -336,7 +344,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="skills-category">
           <h3><i class="fas fa-server"></i> Backend & Databases</h3>
           <div class="skills-grid">
@@ -377,7 +385,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="skills-category">
           <h3><i class="fas fa-tools"></i> CMS & Outils</h3>
           <div class="skills-grid">
@@ -420,7 +428,7 @@
         </div>
       </div>
     </section>
-
+ 
     <!-- Formation Section -->
     <section id="formation">
       <div class="section-title">
@@ -452,7 +460,7 @@
           </div>
           <div class="timeline-dot"></div>
         </div>
-
+ 
         <div class="timeline-item">
           <div class="timeline-content">
             <span class="timeline-badge education">Formation</span>
@@ -473,7 +481,7 @@
           </div>
           <div class="timeline-dot"></div>
         </div>
-
+ 
         <!-- 2024-2025 -->
         <div class="timeline-item">
           <div class="timeline-content">
@@ -496,7 +504,7 @@
           </div>
           <div class="timeline-dot"></div>
         </div>
-
+ 
         <div class="timeline-item">
           <div class="timeline-content">
             <span class="timeline-badge experience">Stage</span>
@@ -520,7 +528,7 @@
           </div>
           <div class="timeline-dot"></div>
         </div>
-
+ 
         <div class="timeline-item">
           <div class="timeline-content">
             <span class="timeline-badge education">Diplôme</span>
@@ -541,7 +549,7 @@
           </div>
           <div class="timeline-dot"></div>
         </div>
-
+ 
         <!-- 2023-2024 -->
         <div class="timeline-item">
           <div class="timeline-content">
@@ -563,7 +571,7 @@
           </div>
           <div class="timeline-dot"></div>
         </div>
-
+ 
         <!-- 2022-2023 -->
         <div class="timeline-item">
           <div class="timeline-content">
@@ -586,7 +594,7 @@
           </div>
           <div class="timeline-dot"></div>
         </div>
-
+ 
         <!-- 2021 -->
         <div class="timeline-item">
           <div class="timeline-content">
@@ -610,7 +618,7 @@
         </div>
       </div>
     </section>
-
+ 
     <!-- Projects Section -->
     <section id="projects">
       <div class="section-title">
@@ -640,7 +648,7 @@
             </div>
             <div class="project-links">
               <a
-                href="https://github.com/JudicaelFTHN/wordpress-RLZ"
+                href="https://github.com/JudicaelFTHN/Realisation-Wordpress.git"
                 target="_blank"
                 class="project-link"
               >
@@ -648,7 +656,7 @@
                 Voir le code
               </a>
               <a
-                href="https://github.com/JudicaelFTHN/wordpress-RLZ"
+                href="https://github.com/JudicaelFTHN/Realisation-Wordpress.git"
                 target="_blank"
                 class="project-link-primary"
               >
@@ -657,7 +665,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="project-card">
           <div class="project-image">
             <div class="project-overlay">
@@ -696,19 +704,20 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="project-card">
           <div class="project-image">
             <div class="project-overlay">
               <i class="fab fa-laravel"></i>
             </div>
+            <span class="project-count-badge">2 projets</span>
           </div>
           <div class="project-content">
             <h3>Applications Laravel</h3>
             <p>
               Développement d'applications web dynamiques et robustes avec le
               framework Laravel. Architecture MVC et intégration de bases de
-              données MySQL.
+              données relationnelles.
             </p>
             <div class="project-tags">
               <span class="tag">Laravel</span>
@@ -717,15 +726,20 @@
               <span class="tag">MVC</span>
             </div>
             <div class="project-links">
-              <a href="#contact" class="project-link-primary">
-                En savoir plus <i class="fas fa-arrow-right"></i>
-              </a>
+              <button
+                type="button"
+                class="project-link-primary"
+                data-modal-open="laravel-modal"
+                aria-haspopup="dialog"
+              >
+                Voir les 2 projets <i class="fas fa-arrow-right"></i>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
-
+ 
     <!-- Contact Section -->
     <section id="contact">
       <div class="contact-section">
@@ -739,7 +753,7 @@
           opportunités d'emploi. N'hésitez pas à me contacter pour discuter de
           vos projets.
         </p>
-
+ 
         <div class="contact-grid">
           <div class="contact-info-section">
             <h3><i class="fas fa-address-card"></i> Informations de contact</h3>
@@ -776,7 +790,7 @@
               </div>
             </div>
           </div>
-
+ 
           <div class="contact-actions">
             <h3><i class="fas fa-download"></i> Documents</h3>
             <div class="action-buttons">
@@ -801,7 +815,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="contact-cta">
           <h3>Prêt à démarrer votre projet ?</h3>
           <a
@@ -814,7 +828,7 @@
         </div>
       </div>
     </section>
-
+ 
     <!-- Footer -->
     <footer>
       <div class="footer-content">
@@ -849,18 +863,101 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 Pierre Judicaël Fitahiana - Tous droits réservés</p>
+        <p>&copy; 2026 Pierre Judicaël Fitahiana - Tous droits réservés</p>
         <p class="footer-location">
           Conçu avec <i class="fas fa-heart"></i> à Antananarivo, Madagascar
         </p>
       </div>
     </footer>
-
+ 
+    <!-- Laravel Projects Modal -->
+    <div class="modal-overlay" id="laravel-modal" aria-hidden="true">
+      <div
+        class="modal-box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="laravel-modal-title"
+      >
+        <button type="button" class="modal-close" data-modal-close aria-label="Fermer la fenêtre">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <span class="modal-eyebrow"><i class="fab fa-laravel"></i> Projets Laravel</span>
+          <h3 id="laravel-modal-title">Quel projet voulez-vous voir ?</h3>
+          <p>Deux applications Laravel — code source et démo en ligne.</p>
+        </div>
+        <div class="modal-choices">
+          <div class="modal-choice">
+            <div class="modal-choice-icon">
+              <i class="fas fa-school"></i>
+            </div>
+            <div class="modal-choice-text">
+              <h4>Gestion École</h4>
+              <p>
+                Application de gestion scolaire : élèves, classes et suivi
+                administratif, architecture MVC.
+              </p>
+              <div class="modal-choice-tags">
+                <span class="tag">Laravel</span>
+                <span class="tag">PHP</span>
+                <span class="tag">MVC</span>
+              </div>
+              <div class="modal-choice-actions">
+                <a
+                  href="https://github.com/JudicaelFTHN/gestion-ecole.git"
+                  target="_blank"
+                  rel="noopener"
+                  class="modal-choice-btn modal-choice-btn-code"
+                >
+                  <i class="fab fa-github"></i> Voir le code
+                </a>
+                <a
+                  href="https://gestion-ecole-gymf.onrender.com/"
+                  target="_blank"
+                  rel="noopener"
+                  class="modal-choice-btn modal-choice-btn-live"
+                >
+                  <i class="fas fa-arrow-up-right-from-square"></i> Voir en ligne
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-choice">
+            <div class="modal-choice-icon">
+              <i class="fas fa-wallet"></i>
+            </div>
+            <div class="modal-choice-text">
+              <h4>Gestion de Budget</h4>
+              <p>
+                Application collaborative de gestion budgétaire et
+                d'épargne — Laravel, Vue.js &amp; Inertia.js.
+              </p>
+              <div class="modal-choice-tags">
+                <span class="tag">Laravel</span>
+                <span class="tag">Vue.js</span>
+                <span class="tag">SQLite</span>
+              </div>
+              <div class="modal-choice-actions">
+                <a
+                  href="https://github.com/JudicaelFTHN/Gestion-de-budget.git"
+                  target="_blank"
+                  rel="noopener"
+                  class="modal-choice-btn modal-choice-btn-code"
+                >
+                  <i class="fab fa-github"></i> Voir le code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
     <!-- Back to Top Button -->
     <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
       <i class="fas fa-arrow-up"></i>
     </button>
-
+ 
     <script src="./assets/script.js"></script>
     <!-- <script src="./script.js"></script> -->
   </body>

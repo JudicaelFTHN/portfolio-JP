@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="pjf-grad" x1="4" y1="4" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0EA5A4"/>
+      <stop offset="1" stop-color="#4C7CF0"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#0D1321"/>
+  <text
+    x="32"
+    y="43"
+    text-anchor="middle"
+    font-family="'Space Grotesk', 'Segoe UI', Arial, sans-serif"
+    font-weight="700"
+    font-size="30"
+    fill="url(#pjf-grad)"
+  >P</text>
+  <circle cx="50" cy="16" r="4" fill="#F2A93B"/>
+</svg>
